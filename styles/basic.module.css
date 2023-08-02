@@ -1,0 +1,28 @@
+.img{
+    margin-left: 44%;
+    margin-top: 3em;
+    border-radius: 50%;
+}
+
+.main_heading{
+    text-align: center;
+}
+
+.container{
+    margin-left: 30%;
+    margin-top: 2em;
+    width: 600px;
+}
+
+.para{
+    font-size: 2.3em;
+    font-weight: 300;
+}
+
+.links{
+    color: #3a86ff;
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
+}
