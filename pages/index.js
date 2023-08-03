@@ -2,10 +2,8 @@ import source from '../public/source.jpg';
 import Image from 'next/image';
 // so in next js you have to write stylesheet like this .
 import styles from '../styles/basic.module.css';
-import { Inter } from 'next/font/google'
 import Head from 'next/head';
 
-const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   return (
