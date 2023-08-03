@@ -26,3 +26,36 @@
 .links:hover{
     text-decoration: underline;
 }
+
+.navbar{
+   display: flex;
+   justify-content: center;
+   margin-right: 5em;
+}
+
+.navLinks{
+    margin-left: 3em;
+    font-size: 20px;
+    text-decoration: none;
+    color: #3a86ff;
+    position: relative;
+    display: inline-block;
+}
+
+.navLinks::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3a86ff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navLinks:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
