@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import axios from "axios";
 import Link from "next/link";
+import styles from '../styles/basic.module.css';
 
 const inter = Inter({ subsets: ["latin"] });
 function Posts({posts}){
@@ -10,7 +11,7 @@ function Posts({posts}){
             <ul>
                 {posts.map(post=>(
                     <li key={post.id}>
-                        <Link href="#">{post.title}</Link>
+                        <Link href={`/comments?id=${post.id}`}>{post.title}</Link>
                     </li>
                 ))}
             </ul>
@@ -20,7 +21,6 @@ function Posts({posts}){
 Posts.getInitialProps = async () => {
     const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
     const {data} = res;
-    console.log(data)
     return {posts: data}
 }
 

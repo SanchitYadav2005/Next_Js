@@ -59,3 +59,22 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.secondaryHeading{
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    font-size: 10px;
+}
+.comList{
+    margin-top: 1em;
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.comList .lis::before {
+    content: attr(data-icon);
+    /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+    font-size: 1.25em;
+    margin-right: 1.2em;
+  }
