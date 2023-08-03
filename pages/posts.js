@@ -11,7 +11,7 @@ function Posts({posts}){
             <ul>
                 {posts.map(post=>(
                     <li key={post.id}>
-                        <Link href={`/comments?id=${post.id}`}>{post.title}</Link>
+                        <Link href={`/comments?id=${post.userId}`}>{post.title}</Link>
                     </li>
                 ))}
             </ul>
